@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>yuBuild — Privacy &amp; Supporto</title>
+<meta name="description" content="yuBuild: informativa sulla privacy e supporto / privacy policy and support">
+<style>
+  :root {
+    --bg: #f4f6fb;
+    --panel: #ffffff;
+    --text: #1b1f27;
+    --dim: #5b6372;
+    --accent: #7a4cf0;
+    --accent2: #2eb8d8;
+    --border: #e1e5ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1117;
+      --panel: #171a22;
+      --text: #e9ebf0;
+      --dim: #9aa2b1;
+      --accent: #a98bff;
+      --accent2: #5fd3f0;
+      --border: #272b36;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 44px 20px 80px; }
+  header { text-align: center; margin-bottom: 28px; }
+  .logo {
+    width: 64px; height: 64px; margin: 0 auto 12px; border-radius: 16px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    display: flex; align-items: center; justify-content: center; font-size: 34px;
+  }
+  h1 { font-size: 1.7rem; margin: 0; }
+  .subtitle { color: var(--dim); margin-top: 2px; }
+  .lang-switch { display: flex; justify-content: center; gap: 8px; margin: 22px 0 34px; }
+  .lang-switch button {
+    background: var(--panel); color: var(--text); border: 1px solid var(--border);
+    padding: 8px 18px; border-radius: 999px; font-size: 0.92rem; cursor: pointer;
+  }
+  .lang-switch button.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  h2 { font-size: 1.25rem; margin: 34px 0 12px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 14px;
+    padding: 18px 22px; margin-bottom: 14px;
+  }
+  .card h3 { font-size: 1rem; margin: 0 0 6px; }
+  .card p, .card li { color: var(--dim); font-size: 0.95rem; margin: 6px 0; }
+  .card ul { padding-left: 20px; margin: 6px 0; }
+  .highlight { border-color: var(--accent); }
+  .highlight h3 { color: var(--accent); }
+  a { color: var(--accent); }
+  .updated { text-align: center; color: var(--dim); font-size: 0.82rem; margin-top: 36px; }
+  /* senza JavaScript si vedono entrambe le lingue */
+  .js [data-lang]:not(.shown) { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🧊</div>
+    <h1>yuBuild</h1>
+    <div class="subtitle">Privacy &amp; Supporto · Privacy &amp; Support</div>
+  </header>
+
+  <div class="lang-switch">
+    <button id="btn-it" onclick="setLang('it')">Italiano</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ===================== ITALIANO ===================== -->
+  <div data-lang="it" lang="it">
+    <h2>Informativa sulla privacy</h2>
+
+    <div class="card highlight">
+      <h3>In breve: nessun dato raccolto</h3>
+      <p>yuBuild <strong>non raccoglie, non memorizza su server e non condivide alcun dato personale</strong>. Non ci sono account, pubblicità, strumenti di analisi o tracciamento.</p>
+    </div>
+
+    <div class="card">
+      <h3>I tuoi mondi</h3>
+      <p>I mondi sono salvati sul tuo dispositivo e, se iCloud Drive è attivo, nel <strong>tuo</strong> iCloud personale per sincronizzarli tra iPhone, iPad e Mac. Lo sviluppatore non vi ha accesso.</p>
+    </div>
+
+    <div class="card">
+      <h3>Multigiocatore</h3>
+      <p>Il nome che scegli, la tua posizione nel gioco e le modifiche al mondo vengono inviati <strong>direttamente</strong> agli altri giocatori della partita: in rete locale, tra dispositivi vicini (Wi-Fi peer-to-peer o Bluetooth) oppure tramite Game Center. Nulla passa dai server dello sviluppatore. Non c'è chat.</p>
+      <p>Il permesso "Rete locale" serve solo per trovare e ospitare partite con i dispositivi vicini.</p>
+    </div>
+
+    <div class="card">
+      <h3>Game Center e acquisti</h3>
+      <p>Se usi Game Center, sfide e classifiche sono gestite da Apple secondo la sua informativa. Gli inviti in multigiocatore sono possibili solo tra amici.</p>
+      <p>Gli acquisti in-app sono gestiti interamente da Apple: lo sviluppatore non riceve i tuoi dati di pagamento.</p>
+    </div>
+
+    <div class="card">
+      <h3>Bambini</h3>
+      <p>Poiché l'app non raccoglie dati, è adatta anche ai più piccoli. I genitori possono controllare gli acquisti con la funzione "Chiedi di acquistare" di In famiglia.</p>
+    </div>
+
+    <h2>Supporto</h2>
+
+    <div class="card">
+      <h3>Contatti</h3>
+      <p>Per domande, problemi o suggerimenti scrivi a <a href="mailto:yufretti@gmail.com?subject=yuBuild">yufretti@gmail.com</a>. Rispondo di solito entro pochi giorni.</p>
+    </div>
+
+    <div class="card">
+      <h3>Come gioco con un amico vicino, anche senza Wi-Fi?</h3>
+      <ul>
+        <li>Chi ospita apre un mondo, va in pausa e tocca <strong>«Apri agli amici»</strong>.</li>
+        <li>L'altro va in <strong>Menu › Multigiocatore</strong> e tocca «Entra» sulla partita.</li>
+        <li>Senza una rete (in auto, in viaggio) tenete <strong>Wi-Fi e Bluetooth accesi</strong> su entrambi i dispositivi, anche se non sono collegati a nessuna rete, e state vicini. In alternativa, uno attiva l'Hotspot personale e l'altro si collega.</li>
+        <li>Funziona anche con due dispositivi che usano lo stesso Apple ID.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Ho cambiato dispositivo: come recupero la versione completa?</h3>
+      <p>Apri <strong>Versione completa</strong> dal menu principale e tocca <strong>«Ripristina acquisti»</strong>, con lo stesso Apple ID usato per l'acquisto. Lo sblocco è condivisibile in famiglia.</p>
+    </div>
+
+    <div class="card">
+      <h3>I mondi non compaiono sull'altro dispositivo</h3>
+      <p>Controlla che su entrambi i dispositivi sia attivo iCloud Drive con lo stesso Apple ID (Impostazioni › il tuo nome › iCloud › iCloud Drive) e che l'app yuBuild sia abilitata. La sincronizzazione può richiedere qualche minuto.</p>
+    </div>
+  </div>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <div data-lang="en" lang="en">
+    <h2>Privacy Policy</h2>
+
+    <div class="card highlight">
+      <h3>In short: no data collected</h3>
+      <p>yuBuild <strong>does not collect, store on servers or share any personal data</strong>. There are no accounts, ads, analytics or tracking.</p>
+    </div>
+
+    <div class="card">
+      <h3>Your worlds</h3>
+      <p>Your worlds are saved on your device and, if iCloud Drive is on, in <strong>your own</strong> iCloud to sync them across iPhone, iPad and Mac. The developer has no access to them.</p>
+    </div>
+
+    <div class="card">
+      <h3>Multiplayer</h3>
+      <p>The name you choose, your in-game position and world changes are sent <strong>directly</strong> to the other players in the game: over the local network, between nearby devices (peer-to-peer Wi-Fi or Bluetooth), or via Game Center. Nothing goes through the developer's servers. There is no chat.</p>
+      <p>The "Local Network" permission is used only to find and host games with nearby devices.</p>
+    </div>
+
+    <div class="card">
+      <h3>Game Center and purchases</h3>
+      <p>If you use Game Center, achievements and leaderboards are handled by Apple under its own privacy policy. Multiplayer invites are friends-only.</p>
+      <p>In-app purchases are handled entirely by Apple: the developer never receives your payment details.</p>
+    </div>
+
+    <div class="card">
+      <h3>Children</h3>
+      <p>Because the app collects no data, it is suitable for younger players too. Parents can control purchases with Family Sharing's "Ask to Buy".</p>
+    </div>
+
+    <h2>Support</h2>
+
+    <div class="card">
+      <h3>Contact</h3>
+      <p>For questions, problems or suggestions, write to <a href="mailto:yufretti@gmail.com?subject=yuBuild">yufretti@gmail.com</a>. I usually reply within a few days.</p>
+    </div>
+
+    <div class="card">
+      <h3>How do I play with a friend nearby, even without Wi-Fi?</h3>
+      <ul>
+        <li>The host opens a world, pauses the game and taps <strong>"Open to friends"</strong>.</li>
+        <li>The other player goes to <strong>Menu › Multiplayer</strong> and taps "Join" on the game.</li>
+        <li>With no network (in the car, travelling) keep <strong>Wi-Fi and Bluetooth turned on</strong> on both devices, even if they aren't connected to any network, and stay close. Alternatively, one device turns on Personal Hotspot and the other joins it.</li>
+        <li>It also works with two devices using the same Apple ID.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>I changed device: how do I get the full version back?</h3>
+      <p>Open <strong>Full version</strong> from the main menu and tap <strong>"Restore purchases"</strong>, using the same Apple ID you bought it with. The unlock can be shared with your family.</p>
+    </div>
+
+    <div class="card">
+      <h3>My worlds don't show up on my other device</h3>
+      <p>Make sure iCloud Drive is on for the same Apple ID on both devices (Settings › your name › iCloud › iCloud Drive) and that yuBuild is enabled. Syncing can take a few minutes.</p>
+    </div>
+  </div>
+
+  <p class="updated">Ultimo aggiornamento / Last updated: 5 ottobre 2026 / October 5, 2026</p>
+</div>
+
+<script>
+  document.documentElement.classList.add('js');
+  function setLang(l) {
+    document.querySelectorAll('[data-lang]').forEach(function (el) {
+      el.classList.toggle('shown', el.getAttribute('data-lang') === l);
+    });
+    document.getElementById('btn-it').classList.toggle('active', l === 'it');
+    document.getElementById('btn-en').classList.toggle('active', l === 'en');
+    document.documentElement.lang = l;
+  }
+  var q = new URLSearchParams(location.search).get('lang');
+  setLang(q === 'en' || q === 'it' ? q : ((navigator.language || 'it').toLowerCase().indexOf('it') === 0 ? 'it' : 'en'));
+</script>
+</body>
+</html>
